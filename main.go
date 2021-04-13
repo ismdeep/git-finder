@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ismdeep/ismdeep-go-utils/args_util"
+	"github.com/ismdeep/args"
 	"io/ioutil"
 	"os"
 )
@@ -28,7 +28,7 @@ func listAllFileByName(fileDir string) {
 }
 
 func main() {
-	if args_util.Exists("--help") {
+	if args.Exists("--help") {
 		ShowHelpMsg()
 		return
 	}
